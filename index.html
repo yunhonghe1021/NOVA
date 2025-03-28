@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Real3D-Portrait: One-shot Realistic 3D Talking Portrait Synthesis.">
+  <meta name="keywords" content="Real3D-Portrait, One-shot, NeRF">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NOVA: Navigable and Open Visualization Architecture for Interactive 4D Scenes via Gaussian Splatting and Spatial-Temporal Intelligence Fusion</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/3dface_logo.png">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">NOVA: Navigable and Open Visualization Architecture for Interactive 4D Scenes via Gaussian Splatting and Spatial-Temporal Intelligence Fusion</h1>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">Yunhong He<sup>1,*</sup>,</span>
+              <span class="author-block">Zhengqing Yuan<sup>2,*</sup>,</span>
+        
+              <br>
+        
+              <span class="author-block">Zhengzhong Tu<sup>3</sup>,</span>
+              <span class="author-block">Yanfang Ye<sup>2</sup>,</span>
+              <span class="author-block">Lichao Sun<sup>1</sup></span>
+            </div>
+  
+            <div class="is-size-5 publication-authors">
+        
+              <span class="author-block"><sup>1</sup>Lehigh University,</span>
+              <span class="author-block"><sup>2</sup>University of Notre Dame,</span>
+              <span class="author-block"><sup>3</sup>Texas A&M University</span>
+            </div>
+  
+            <div class="column has-text-centered">
+                  <!-- Code Link. -->
+                <span class="link-block">
+                  <a href="https://github.com/DLYuanGod/Movo" class="external-link button is-normal is-rounded is-dark" onclick="">
+                  <span class="icon">
+                  <svg class="svg-inline--fa fa-github fa-w-16" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="github" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" data-fa-i2svg=""><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg><!-- <i class="fab fa-github"></i> Font Awesome fontawesome.com -->
+                  </span>
+                  <span>Code</span>
+                  </a>
+                </span>
+                <!-- Dataset Link. -->
+                <span class="link-block">
+                  <a href="https://docs.google.com/forms/d/e/1FAIpQLSe4MdyNhsWHBVtMp8oJMb1XvZ9Sr5-MHctbykzWjX92d3_jfg/viewform" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                        <svg class="svg-inline--fa fa-images fa-w-20" aria-hidden="true" focusable="false" data-prefix="far" data-icon="images" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M480 416v16c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V176c0-26.51 21.49-48 48-48h16v48H54a6 6 0 0 0-6 6v244a6 6 0 0 0 6 6h372a6 6 0 0 0 6-6v-10h48zm42-336H150a6 6 0 0 0-6 6v244a6 6 0 0 0 6 6h372a6 6 0 0 0 6-6V86a6 6 0 0 0-6-6zm6-48c26.51 0 48 21.49 48 48v256c0 26.51-21.49 48-48 48H144c-26.51 0-48-21.49-48-48V80c0-26.51 21.49-48 48-48h384zM264 144c0 22.091-17.909 40-40 40s-40-17.909-40-40 17.909-40 40-40 40 17.909 40 40zm-72 96l39.515-39.515c4.686-4.686 12.284-4.686 16.971 0L288 240l103.515-103.515c4.686-4.686 12.284-4.686 16.971 0L480 208v80H192v-48z"></path></svg><!-- <i class="far fa-images"></i> Font Awesome fontawesome.com -->
+                    </span>
+                    <span>Datasets</span>
+                    </a>
+              </span></div>
+  
+            </div>
+            
+          </div>
+        </div>
+
+            <!-- Abstract. -->
+            <div class="container is-max-desktop">
+              <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                  <h2 class="title is-3">Abstract</h2>
+                  <div class="content has-text-justified">
+                    <p>We present NOVA, a novel frontend visualization framework designed to enable real-time, multimodal interaction with 4D (spatiotemporal) scenes. While recent advances in vision and language models have enabled rich 3D content generation, existing WebGL-based systems remain limited in dynamic scene rendering, temporal control, and user interaction. NOVA addresses these challenges by integrating WebGL with Supersplat rendering, supporting intuitive editing tools, temporal navigation, and camera control within a unified interface. Given a single image and a textual description, NOVA synthesizes a 4D scene via 3D reconstruction, image-to-video generation, and temporal decomposition, allowing users to explore and manipulate the generated content in real-time. Our system design is modular, scalable, and adaptable, with applications across VR/AR, gaming, and scientific simulation. We demonstrate that NOVA offers an effective and accessible solution for interactive 4D visualization, bridging static 3D generation with dynamic, user-driven spatiotemporal interaction.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+      <!--/ Abstract. -->
+      
+     <!-- 视频展示部分 -->
+<div class="column has-text-centered">
+  <h2 class="title is-3">Demo Video</h2>
+
+  <div style="margin-top: 20px;">
+    <video width="95%" controls style="margin-bottom: 20px;">
+      <source src="static/images/demo1.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <div style="margin-top: 20px;">
+    <video width="95%" controls>
+      <source src="static\images\demo2.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</div>
+
+
+      <br></br>
+      <div class="column has-text-centered">
+      <h2 class="title is-3">framework</h2>
+        <img src="static\images\framework.png"
+        class="interpolation-image"
+        alt="The inference process of Real3D-Portrait."
+        width="80%"/>
+        <div width="80%">
+        <p>
+          Illustration of the processing pipeline. The system comprises four main modules: 3D scene reconstruction, image-to-video synthesis, video-to-frame decomposition, and 4D scene generation. The resulting 4D content is passed to the frontend for real-time user interaction.
+        </p>
+      </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <div class="column has-text-centered">
+    <h2 class="title is-3">Frontend Workflow</h2> 
+      <img src="static\images\workflow.png"
+      class="interpolation-image"
+      alt="The inference process of Real3D-Portrait."
+      width="80%"/>
+      <div width="80%">
+      <p>
+        Workflow of our proposed controllable 4D scene generation framework. The system takes a single 2D image and textual description as input and sequentially processes them through 3D generation, panoramic rendering, and dynamic video synthesis. The resulting video is temporally reconstructed into a continuous 4D scene, which is then transmitted to the frontend for real-time, user-driven interaction. Users can intuitively control playback speed, temporal position, and spatial viewpoint to explore and edit the 4D environment.  
+      </p>
+    </div>
+    </div>
+  </div>
+  </div>
+</section>
+ 
+
+</body>
+</html>
